@@ -3,4 +3,9 @@
     <string name="ingresa_una_cadena_de_texto">Ingresa una cadena de texto</string>
     <string name="validar">validar</string>
     <string name="inserta_una_cadena">inserta una cadena</string>
+    <string name="automata_5">Automata 5</string>
+    <string name="automata_1">Automata 1</string>
+    <string name="automata_2">Automata 2</string>
+    <string name="automata_3">Automata 3</string>
+    <string name="automata_4">Automata 4</string>
 </resources>

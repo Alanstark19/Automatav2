@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //campos
@@ -132,17 +133,47 @@ public class MainActivity extends AppCompatActivity {
             caracteres++;
         }else{
             validado = false;
-            msj = "La cadena no es valida";
+            msj = "La cadena no es válida para el automata5";
             tv_head.setText(msj);
+           // Toast.makeText(this, msj, Toast.LENGTH_LONG).show();
         }
         i++;
     }
         if(bandera == xd.length){
             validado = true;
-            msj = "La cadena es valida";
+            msj = "La cadena es válida para el automata5";
             tv_head.setText(msj);
+            //Toast.makeText(this, msj, Toast.LENGTH_LONG).show();
         }
 
     }
 
+
+    public void valida1(View view) {
+        String cadena = et_cadena.getText().toString();
+        Automata1 miautomata = new Automata1(cadena);
+        String mensaje1 = miautomata.mensaje();
+        Toast.makeText(this, mensaje1, Toast.LENGTH_LONG).show();
+    }
+
+    public void valida2(View view) {
+        String cadena = et_cadena.getText().toString();
+        Automata2 miautomata = new Automata2(cadena);
+        String mensaje1 = miautomata.mensaje();
+        Toast.makeText(this, mensaje1, Toast.LENGTH_LONG).show();
+    }
+
+    public void valida3(View view) {
+        String cadena = et_cadena.getText().toString();
+        Automata3 miautomata = new Automata3(cadena);
+        String mensaje1 = miautomata.mensaje();
+        Toast.makeText(this, mensaje1, Toast.LENGTH_LONG).show();
+    }
+
+    public void valida4(View view) {
+        String cadena = et_cadena.getText().toString();
+        Automata4 miautomata = new Automata4(cadena);
+        String mensaje1 = miautomata.mensaje();
+        Toast.makeText(this, mensaje1, Toast.LENGTH_LONG).show();
+    }
 }//fin de la clase
